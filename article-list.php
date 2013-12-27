@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+<title>Backend</title> 
+
+<?php include 'head.php' ?>
+</head>
+
+<body> 
+<section class="vbox"> 
+	<?php include 'header.php' ?>
+
+	<section>
+		<section class="hbox stretch">
+		<?php include 'sidebar.php' ?>
+		
+
+
+
+		<section> <!-- page content starts here --> 
+			<div class="wrapper"> 
+				<?php include 'includes/articles-table.php' ?>
+			</div> 
+		</section> <!-- page content ends -->
+
+		</section> 
+	</section> 
+
+
+<!-- you can add a footer here with a class .footer -->
+</section><!-- vbox -->
+
+<?php include 'scripts.php' ?>
+<!-- fuelux --> 
+<script src="js/fuelux/fuelux.js"></script> 
+<script src="js/libs/underscore-min.js"></script> 
+<!-- datatables --> 
+<script src="js/datatables/jquery.dataTables.min.js"></script> 
+
+
+</body>
+</html>
+
