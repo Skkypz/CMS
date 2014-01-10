@@ -1,48 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head> 
-<title>Backend</title> 
-
-<?php include 'head.php' ?>
+<!DOCTYPE>
+<html>
+<head>
+	<title>Codefic Content Manager</title>
+	<?php include 'head.php' ?>
 </head>
+<body>
 
-<body> 
-<section class="vbox"> 
-	<?php include 'header.php' ?>
 
-	<section>
-		<section class="hbox stretch">
-		<?php include 'sidebar.php' ?>
+<section id="side">
+	<?php include 'side.php' ?>
+</section><!-- side -->
+
+<section class="content">
+	<?php include 'top-nav.php' ?>
+	
+	<section class="sub-header">
+		<p>Create new category</p>
+		<button>Toggle</button>
+		<div class="clear"></div>
+	</section>
+
+
+	<div class="page-content">
+		<form action="" class="new-categ-form left form" id="create-catefogy-form">
+
+			<select name="parent" class="select-parent">
+				<option value="Parent">Parent</option>
+				<option value="Parent">Second</option>
+			</select>
+
+			<select name="parent" class="select-parent">
+				<option value="Parent">Parent</option>
+				<option value="Parent">Second</option>
+			</select>
 		
+			<input type="text" class="input categ-name" placeholder="Category Name">
+		
+			<textarea name="description" id="categ-description" cols="30" rows="10" placeholder="Describe the category"></textarea><br>
+			
+			<select name="tags" id="select-tag">
+				<option value="tag1">Hunting</option>
+				<option value="tag2">Fishing</option>
+				<option value="tag3">Skying</option>
+			</select><br>
+
+			<button type="submit">Create category</button>
+		</form>
 
 
+		<aside>
+			sad
+		</aside>
+	</div><!-- page-content -->
 
-		<section> <!-- page content starts here --> 
-			<div class="wrapper"> 
-				<p class="h4"> This dashboard layout start with a vbox. </p> 
-				<p>You can use the .hbox and .vbox to build the complicated layouts.</p> 
-			</div> 
-		</section> <!-- page content ends -->
-
-
-
-
-
-		<aside class="bg-light lter b-l aside-sm"> 
-			<div class="wrapper">
-				<p>aside content</p>
-			</div> 
-		</aside> 
-
-		</section> 
-	</section> 
-
-
-<!-- you can add a footer here with a class .footer -->
-</section><!-- vbox -->
+</section><!-- content -->
 
 <?php include 'scripts.php' ?>
 </body>
 </html>
-

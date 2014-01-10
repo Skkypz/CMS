@@ -1,0 +1,171 @@
+/*********************
+    01. TABLES
+*********************/
+table tr td {
+	border: 1px solid #000;
+	padding: 2px 4px 2px 4px;
+}
+table {
+	width: 100%;
+	border:1px solid #e0e4e8;
+	thead {
+		background-color: @blue;
+		color: #fff;
+		tr {
+			height: 45px;
+			td {
+				font-size: 14px;
+				font-weight: bold;
+				border: 1px solid @blue-darker;
+				padding-left: 10px;
+				input {
+					position: relative;
+					top: 10px;
+				}
+			}
+		}
+	}
+	
+	tbody {
+		tr {
+			height: 25px;
+			td {
+				border: 1px solid @blue-lighter;
+				font-size: 13px;
+				height: 40px;
+				padding-left: 10px;
+				color: @blue-light;
+				background-color: #fff;
+				input {
+					position: relative;
+					top: 10px;
+					margin: 0 5px 0 5px;
+				}
+				a.visit-article {
+					font-family: 'Museo', Verdana;
+					font-style: italic;
+					float: right;
+					color: @green;
+					margin-right: 10px;
+					display: none;
+				}
+			}
+
+			&:hover {
+				background-color: @blue-lighter;
+				td {
+					border: 1px solid #fff!important;
+					background-color: transparent;
+				}
+				&::first-child {
+					border-left: none;
+					background-color: red;
+				}
+				a.visit-article {
+					display: block;
+				}
+			}
+		}
+	}
+	tr td:nth-child(4), td:nth-child(5) {
+		text-align: center;
+	}
+	tr td:first-child {
+		min-width: 300px;
+	}
+	td.state {
+		position: relative;
+		width: 95px;
+		p {
+			position: absolute;
+			top: -8px;
+			display: block;
+			border-radius: 2px;
+			width: 80px;
+			width: 80px;
+			padding: 5px;
+		}
+	}
+	p.state-published {
+		background-color: @green!important;
+		color: #fff;
+	}
+	p.state-deleted {
+		background-color: @red!important;
+		color: #fff;
+	}
+	p.state-draft {
+		background-color: @yellow!important;
+		color: #fff;
+	}
+	p.state-incomplete {
+		background-color: @orange!important;
+		color: #fff;
+	}
+}
+
+
+
+/*********************
+    02. Pagination
+*********************/
+
+ul.pagination {
+	margin-left: 20px;
+	li {
+		display: block;
+		float: left;
+		padding: 3px;
+		background-color: @blue;
+		color: @blue-lighter;
+		margin-right: 3px;
+		text-align: center;
+		width: 20px;
+		height: 20px;
+		.border-radius(3px);
+	}
+	a {
+		color: inherit;
+		width: 100%;
+		display: block;
+		font-size: 12px;
+		line-height: 22px; 
+	}
+}
+
+
+/*********************
+    03. Lables
+*********************/
+button.label {
+	display: block;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	float: left;
+	font-size: 12px;
+}
+.label-green {
+	background-color: @green;
+	color: #fff;
+}
+.label-red {
+	background-color: @red;
+	color: #fff;
+}
+.label-blue {
+	background-color: @blue;
+	color: #fff;
+}
+.label-yellow {
+	background-color: @yellow;
+	color: #000;
+}
+.label-orange {
+	background-color: @orange;
+	color: #fff;
+}
+.label-purple {
+	background-color: @purple;
+	color: #fff;
+}

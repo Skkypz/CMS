@@ -1,0 +1,94 @@
+/*********************
+FORMS
+*********************/
+input {
+  padding: 8px;
+}
+select {
+  min-width: 80px;
+  padding: 5px;
+}
+textarea {
+  padding: 8px;
+  width: 100%;
+}
+button {
+  padding: 5px 20px 5px 20px;
+}
+
+
+
+
+
+
+
+
+
+/*******************                          *********************/
+/******************        box styles         ********************/
+/*******************                          *********************/
+
+.clear {
+  clear: both;
+}
+.hide {
+  display: none;
+}
+.border-radius (@radius) {
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+.text-shadow (@string: 0 1px 3px #000 ) {
+  text-shadow: @string;
+}
+.box-shadow (@string) {
+  -webkit-box-shadow: @string;
+  -moz-box-shadow:    @string;
+  box-shadow:         @string;
+}
+.opacity (@opacity: 0.5) {
+  -webkit-opacity:  @opacity;
+  -moz-opacity:     @opacity;
+  opacity:    @opacity;
+}
+.gradient (@startColor: #eee, @endColor: white) {
+  background-color: @startColor;
+  background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+  background: -webkit-linear-gradient(top, @startColor, @endColor);
+  background: -moz-linear-gradient(top, @startColor, @endColor);
+  background: -ms-linear-gradient(top, @startColor, @endColor);
+  background: -o-linear-gradient(top, @startColor, @endColor);
+}
+.horizontal-gradient (@startColor: #eee, @endColor: white) {
+  background-color: @startColor;
+  background-image: -webkit-gradient(linear, left top, right top, from(@startColor), to(@endColor));
+  background-image: -webkit-linear-gradient(left, @startColor, @endColor);
+  background-image: -moz-linear-gradient(left, @startColor, @endColor);
+  background-image: -ms-linear-gradient(left, @startColor, @endColor);
+  background-image: -o-linear-gradient(left, @startColor, @endColor);
+}
+.transition (@transition) {
+  -webkit-transition: @transition;  
+  -moz-transition:    @transition;
+  -ms-transition:     @transition; 
+  -o-transition:      @transition;  
+}
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+/* Fonts */
+.main-font {
+  font-family: 'Open Sans', 'Segoe', Arial, Helvetica, sans-serif;
+}
+.secondary-font {
+  font-family: 'Myriad Pro', Arial, Helvetica, sans-serif;
+}
+.third-font {
+  font-family: 'Roboto Slab', 'Times New Roman', Georgia, Verdana;
+}
+.special-font {
+  font-family: 'Helvetica Neue';
+}

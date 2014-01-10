@@ -7,8 +7,12 @@
 <link rel="shortcut icon" type="image/png" href="fav.png">
 						
 						<!-- LOAD CSS -->
-<!--   font css   -->   <link rel="stylesheet" href="css/font.css" type="text/css" cache="false" /> 
-<!--  todo css    -->   <link rel="stylesheet" href="css/app.v2.css" type="text/css" /> 
+<!-- google fonts --> 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300|Roboto+Slab:400,700" rel="stylesheet" type="text/css">
+<!--   fancybox   --> 	<link href="css/fancybox.css" rel="stylesheet" type="text/css">
+<!-- royalslider  --> 	<link href="css/royalslider.css" rel="stylesheet" type="text/css">
+<!--  boostrap    -->   <link rel="stylesheet/css" href="css/bootsrap.min.css">
+<!--boostrap res. -->   <link rel="stylesheet/css" href="css/bootsrap-responsive.min.css">
+<!--font awesome  -->   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 <!--    style     -->   <link rel="stylesheet/less" href="less/style.less">
 
 
@@ -16,18 +20,16 @@
 						<!-- LOAD Javascript -->
 <!-- jQuery google CDN --> <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <!--    jQuery local   --> <!-- <script src="lib/jquery.v1.20.2.js"></script> -->
-<!--     less local    --> <script src="js/less.js"></script>
+<!--     less local    --> <script src="lib/less.js"></script>
+<!--    jQuery easing  --> <script src="js/jquery.easing-1.3.js"></script>
+<!--    royal slider   --> <script src="js/jquery.royalslider.min.js"></script>
+<!--       fancybox    --> <script src="js/fancybox-v2.1.5.js"></script>
+<!-- 	  mousewheel   --> <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<!-- 	   boostrap    --> <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <!-- 	    script     --> <script type="text/javascript" src="js/script.js"></script>
 
 
-
-
-
-<!--[if lt IE 9]> 
-<script src="js/ie/respond.min.js" cache="false">
-</script> 
-<script src="js/ie/html5.js" cache="false">
-</script> 
-<script src="js/ie/fix.js" cache="false">
-</script> <![endif]-->
-
+<!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="">
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->

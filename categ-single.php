@@ -1,48 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head> 
-<title>Backend</title> 
-
-<?php include 'head.php' ?>
+<!DOCTYPE>
+<html>
+<head>
+	<title>Codefic Content Manager</title>
+	<?php include 'head.php' ?>
 </head>
-
-<body> 
-<section class="vbox"> 
-	<?php include 'header.php' ?>
-
-	<section>
-		<section class="hbox stretch">
-		<?php include 'sidebar.php' ?>
-		
+<body>
 
 
+<section id="side">
+	<?php include 'side.php' ?>
+</section><!-- side -->
 
-		<section> <!-- page content starts here --> 
-			<div class="wrapper"> 
-				<p class="h4"> This dashboard layout start with a vbox. </p> 
-				<p>You can use the .hbox and .vbox to build the complicated layouts.</p> 
-			</div> 
-		</section> <!-- page content ends -->
+<section class="content">
+	<?php include 'top-nav.php' ?>
+	<?php include 'table-sample.php' ?>
 
+	<br><br><br>
 
+	<button class="label label-green">label</button>
+	<button class="label label-red">1</button>
+	<button class="label label-blue">1</button>
+	<button class="label label-yellow">1</button>
+	<button class="label label-orange">1</button>
+	<button class="label label-purple">1</button>
 
-
-
-		<aside class="bg-light lter b-l aside-sm"> 
-			<div class="wrapper">
-				<p>aside content</p>
-			</div> 
-		</aside> 
-
-		</section> 
-	</section> 
-
-
-<!-- you can add a footer here with a class .footer -->
-</section><!-- vbox -->
+</section><!-- content -->
 
 <?php include 'scripts.php' ?>
 </body>
 </html>
-
