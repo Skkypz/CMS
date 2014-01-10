@@ -17,7 +17,7 @@
 
 <div class="collapse navbar-collapse"> 
 	<ul class="nav navbar-nav"> 
-		<li class="dropdown">
+		<li class="dropdown hidden">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 				<i class="fa fa-flask text-white"></i> 
 				<span class="text-white">UI kit</span>
@@ -39,7 +39,7 @@
 		</li> 
 
 
-		<li class="dropdown">
+		<li class="dropdown hidden">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 				<i class="fa fa-file-text text-white"></i> 
 				<span class="text-white">Pages</span>

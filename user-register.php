@@ -1,48 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
+<head>
+	<title>Register</title>
 
-<head> 
-<title>Backend</title> 
-
-<?php include 'head.php' ?>
+	<?php include 'head.php' ?>
 </head>
 
-<body> 
-<section class="vbox"> 
-	<?php include 'header.php' ?>
+<body>
+<div class="modal-over register-page"> 
+	<div class="modal-center animated flipInX" style="width:300px;margin:-30px 0 0 -150px;"> 
+		<div class="m-b logo-login">
+			<img src="images/logo-2.png" class="">
+		</div> 
 
-	<section>
-		<section class="hbox stretch">
-		<?php include 'sidebar.php' ?>
-		
+		<div class="clear"> 
+			<div class=" ">
+				<input type="text" class="form-control text-sm m-b" placeholder="Enter Username"> 
+				<input type="password" class="form-control text-sm m-b" placeholder="Enter Password"> 
+				<input type="password" class="form-control text-sm m-b" placeholder="Confirm Password"> 
+				<input type="text" class="form-control text-sm m-b" placeholder="Your email adress"> 
 
-
-
-		<section> <!-- page content starts here --> 
-			<div class="wrapper"> 
-				<p class="h4"> This dashboard layout start with a vbox. </p> 
-				<p>You can use the .hbox and .vbox to build the complicated layouts.</p> 
+				<span class="input-group-btn">
+					<button class="btn btn-success l-100 border-radius" type="button" data-dismiss="modal"><i class="fa fa-arrow-right m-r"></i>Register</button> 
+				</span> 
 			</div> 
-		</section> <!-- page content ends -->
-
-
-
-
-
-		<aside class="bg-light lter b-l aside-sm"> 
-			<div class="wrapper">
-				<p>aside content</p>
-			</div> 
-		</aside> 
-
-		</section> 
-	</section> 
-
-
-<!-- you can add a footer here with a class .footer -->
-</section><!-- vbox -->
-
-<?php include 'scripts.php' ?>
+		</div> 
+	</div>
+</div>
+	<?php include 'scripts.php' ?>
 </body>
-</html>
-
