@@ -1,59 +1,46 @@
-<!DOCTYPE>
-<html>
-<head>
-	<title>Codefic Content Manager</title>
-	<?php include 'head.php' ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+<title>Backend</title> 
+
+<?php include 'head.php' ?>
 </head>
-<body>
 
+<body> 
+<section class="vbox"> 
+	<?php include 'header.php' ?>
 
-<section id="side">
-	<?php include 'side.php' ?>
-</section><!-- side -->
-
-<section class="content">
-	<?php include 'top-nav.php' ?>
-	
-	<section class="sub-header">
-		<p>Create new category</p>
-		<button>Toggle</button>
-		<div class="clear"></div>
-	</section>
-
-
-	<div class="page-content">
-		<form action="" class="new-categ-form left form" id="create-catefogy-form">
-
-			<select name="parent" class="select-parent">
-				<option value="Parent">Parent</option>
-				<option value="Parent">Second</option>
-			</select>
-
-			<select name="parent" class="select-parent">
-				<option value="Parent">Parent</option>
-				<option value="Parent">Second</option>
-			</select>
-		
-			<input type="text" class="input categ-name" placeholder="Category Name">
-		
-			<textarea name="description" id="categ-description" cols="30" rows="10" placeholder="Describe the category"></textarea><br>
+	<section>
+		<section class="hbox stretch">
+			<?php include 'sidebar.php' ?>
 			
-			<select name="tags" id="select-tag">
-				<option value="tag1">Hunting</option>
-				<option value="tag2">Fishing</option>
-				<option value="tag3">Skying</option>
-			</select><br>
-
-			<button type="submit">Create category</button>
-		</form>
 
 
-		<aside>
-			sad
-		</aside>
-	</div><!-- page-content -->
+			<section id="content" class="height-100p overflow-hidden"> <!-- page content starts here --> 
+				<header class="header bg-white b-b">
+					<p>Create new category</p>
+					<a href="#"><span class="badge bg-info pull-right m-t">Veiw Page</span></a>
+					<span class="badge bg-danger pull-right m-t m-r">16 Articles</span>
+				</header>
 
-</section><!-- content -->
+				<section class="scrollable scrollbar-small">
+					<div class="wrapper">
+						<section class="panel">
+							<div class="wrapper">
+								<?php include 'includes/categ-new-form.php' ?>
+							</div>
+						</section>
+					</div>
+				</section>
+			</section> <!-- page content ends -->
+
+		</section> 
+	</section> 
+
+
+<!-- you can add a footer here with a class .footer -->
+</section><!-- vbox -->
 
 <?php include 'scripts.php' ?>
 </body>

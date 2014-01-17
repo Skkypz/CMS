@@ -20,8 +20,8 @@
 
 		<section> <!-- page content starts here --> 
 			<div class="wrapper"> 
-				<p class="h4"> This dashboard layout start with a vbox. </p> 
-				<p>You can use the .hbox and .vbox to build the complicated layouts.</p> 
+				<p class="h4">Foloseste templateul article-new</p> 
+				<p>Article single va fi la fel ca article new, diferenta e ca trebuie importate date in fielduri.</p> 
 			</div> 
 		</section> <!-- page content ends -->
 
